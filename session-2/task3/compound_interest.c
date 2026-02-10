@@ -22,10 +22,10 @@ int main( void ) {
      */
     
     final_amount = deposit * pow(( 1 + rate ),term);
-    gain = final_amount - deposit
+    gain = final_amount - deposit;
 
-    printf("The final amount is  %f\n",final_amount);
-    printf("The final gain it  %f\n",&gain);
+    printf("The final amount is %f\n",final_amount);
+    printf("The final gain is %f\n",gain);
 
     return 0;
 }

@@ -20,11 +20,14 @@ int main( void ) {
      * Implement the formula for the 2 roots of a quadratic.
      * You can define additional variable for intermediate results to make the code simpler.
      * Print out the final results for the 2 roots as float values.
+     * (-b + sqrt(pow(b,2) - 4ac)/2a
+     * (-b - sqrt(pow(b,2) - 4ac)/2a
      */
+    root1 = (-b + sqrt(pow(b,2) - (4*a*c)))/(2*a);
+    root2 = (-b - sqrt(pow(b,2) - (4*a*c)))/(2*a);
 
-    root1 = pow(a, 2) + ()
-
-    
+    printf(root1);
+    printf(root2);
 
     return 0;
 }
