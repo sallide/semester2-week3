@@ -11,9 +11,9 @@
  int main( void ) {
 
     // define and initialise variables for the problem data 
-    float salary = 24000.0;
+    float salary = 36250.0;
     float NI_contribution = 8;
-    float tax_contribution = 20;
+    float tax_contribution = 15;
     float deductions;
     float take_home_salary;
     float tax_salary;
