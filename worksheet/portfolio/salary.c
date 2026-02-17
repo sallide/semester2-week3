@@ -16,6 +16,7 @@
     float tax_contribution = 20;
     float deductions;
     float take_home_salary;
+    float tax_salary;
 
     float NI_percent;
     float tax_percent;
@@ -32,7 +33,19 @@
 
     NI_contribution = salary * NI_percent;
 
-    tax_contribution = ((salary - NI_contribution)-12500)*tax_percent;
+   tax_salary = salary - NI_contribution;
+
+
+    if (tax_salary > 0)
+    {
+      tax_contribution = (tax_salary-12500)*tax_percent;
+    }
+      else {
+
+      tax_contribution = 0;
+         
+      }
+
 
     take_home_salary = salary - NI_contribution - tax_contribution;
 
